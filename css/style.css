@@ -17,7 +17,10 @@ body {
 }
 
 
+
+
 .navbar {
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,6 +115,7 @@ footer {
   color: #fff;
   padding: 3rem 0 1rem;
   position: relative;
+  z-index: 1;
 }
 
 .footer-content {
@@ -260,4 +264,14 @@ footer {
   width: 20%;
   height: auto;
   z-index: 0;
+}
+
+.esquina-izquierda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: auto;
+  z-index: 0;
+  transform: scaleX(-1);
 }
