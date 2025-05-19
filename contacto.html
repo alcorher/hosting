@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuervo beer musesum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="scripts/toggleNav.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="menu-toggle" onclick="toggleMenu()">☰</a>
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="img/logo_nobg.png" alt="Cuervo Beer Museum Logo"></a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="descubrenos.html">DESCÚBRENOS</a></li>
+                <li><a href="">EXHIBICIONES</a></li>
+                <li><a href="">TALLERES</a></li>
+                <li><a href="contacto.html">CONTÁCTANOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.0027724001316!2d-6.032834923707953!3d36.866352463967054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0d948b51cccbc9%3A0xcf2354b5fc39d6fc!2sVenta%20Manolo!5e0!3m2!1ses!2ses!4v1747684252703!5m2!1ses!2ses"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contacto">
+            <div class="container">
+                <div class="grid">
+                    <div class="grid-item contacto-texto">
+                        <h2>Contáctanos</h2>
+                    <p>Si tienes alguna pregunta, propuesta, o ganas de trabajar, no dudes en ponerte en contacto con
+                        nosotros. Estamos aquí
+                        para
+                        ayudarte.</p>
+                        <img src="" alt="">
+                    </div>
+                   <div class="grid-item formulario">
+                     <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">Enviar 🠮</button>
+                        </div>
+                    </form>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="index.html"><img src="img/logo_nobg.png" alt="Cuervo Beer Museum Logo"></a>
+                </div>
+                <div class="footer-column">
+                    <h3>Cuervo Beer Museum</h3>
+
+                    <p>Celebrando la rica herencia cultural de la elaboración de cerveza y su impacto en la sociedad a
+                        lo
+                        largo de la historia. Descubre cómo esta tradición ha influido en la cultura, la economía y las
+                        comunidades de todo el mundo.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="descubrenos.html">Descubrenos</a></li>
+                        <li><a href="#exhibits">Exhibiciones</a></li>
+                        <li><a href="#visit">Talleres</a></li>
+                        <li><a href="https://www.alcoholicos-anonimos.org/v_portal/apartados/apartado.asp">Ayuda
+                                profesional</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Visitanos</h3>
+                    <p>Calle falsa 123<br>El Cuervo de Lebrija</p>
+                    <p class="footer-links"><a href="tel:+34010820250">Teléfono: 010 82 02 50</a><br>
+                        <a href="mailto:info@cuervobeermuseum.com">Email: info@cuervobeermuseum.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Algun día Cuervo Beer Museum </p>
+            </div>
+
+            <img class="esquina-izquierda" src="img/footer.png" alt="">
+            <img class="esquina" src="img/fundador.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>
