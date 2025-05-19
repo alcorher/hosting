@@ -2,12 +2,12 @@ function toggleMenu() {
   const navLinks = document.getElementById("navLinks")
   navLinks.classList.toggle("active")
 
-/*   // Prevent scrolling when menu is open
+  // Prevent scrolling when menu is open
   if (navLinks.classList.contains("active")) {
     document.body.style.overflow = "hidden"
   } else {
     document.body.style.overflow = "auto"
-  } */
+  } 
 }
 
 // Close menu when clicking outside
@@ -20,7 +20,7 @@ document.addEventListener("click", (event) => {
   }
 })
 
-/* // Close menu when clicking on a nav link
+// Close menu when clicking on a nav link
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
     const navLinks = document.getElementById("navLinks")
@@ -28,4 +28,4 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
       toggleMenu()
     }
   })
-}) */
+}) 
