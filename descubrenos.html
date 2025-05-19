@@ -99,8 +99,11 @@
                 </div>
             </section>
 
-            <aside class="historia-aside">
-                <div class="aside-card">
+            <button class="arrow" id="asideToggle" aria-label="Toggle sidebar">→</button>
+
+<aside class="historia-aside" id="historiaAside">
+    <div class="aside-content">
+        <div class="aside-card">
                     <h3>¿Sabías que?</h3>
                 </div>
                 <div class="aside-card">
@@ -164,8 +167,9 @@
                                 sonido original - David Martínez | Cervezas</a> </section>
                     </blockquote>
                     <script async src="https://www.tiktok.com/embed.js"></script>
-
-            </aside>
+    </div>
+</aside>
+            
         </div>
     </main>
 
@@ -240,4 +244,49 @@
     </footer>
 </body>
 
+
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+    const aside = document.getElementById('historiaAside');
+    const toggle = document.getElementById('asideToggle');
+    
+    if (aside && toggle) {
+        toggle.addEventListener('click', function() {
+            aside.classList.toggle('active');
+            
+            
+            const isExpanded = aside.classList.contains('active');
+            toggle.setAttribute('aria-expanded', isExpanded);
+            
+            
+            toggle.textContent = isExpanded ? '×' : '⬅';
+        });
+        
+        // Initialize as collapsed on mobile
+        if (window.matchMedia('(max-width: 1400px)').matches) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '⬅';
+        }
+    }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const aside = document.getElementById('historiaAside');
+    const header = document.querySelector('header');
+    const toggle = document.getElementById('asideToggle');
+
+    if (aside && header && toggle) {
+        
+        updateHeaderVisibility();
+        
+        
+        toggle.addEventListener('click', updateHeaderVisibility);
+        
+        function updateHeaderVisibility() {
+            header.style.display = aside.classList.contains('active') ? 'none' : '';
+        }
+    }
+});
+</script>
 </html>
