@@ -1,11 +1,11 @@
-/* Main container */
+
 .historia-container {
     position: relative;
     min-height: 100vh;
     display: flex;
 }
 
-/* Fixed full-height image */
+
 .historia-img-pc {
     position: sticky;
     top: 0;

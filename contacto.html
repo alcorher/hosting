@@ -29,39 +29,46 @@
 
 
     <main>
-        <section class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.0027724001316!2d-6.032834923707953!3d36.866352463967054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0d948b51cccbc9%3A0xcf2354b5fc39d6fc!2sVenta%20Manolo!5e0!3m2!1ses!2ses!4v1747684252703!5m2!1ses!2ses"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        
 
         <section class="contacto">
             <div class="container">
                 <div class="grid">
                     <div class="grid-item contacto-texto">
-                        <h2>Contáctanos</h2>
+                        <div class="card">
+                            <h2>Contáctanos</h2>
                     <p>Si tienes alguna pregunta, propuesta, o ganas de trabajar, no dudes en ponerte en contacto con
                         nosotros. Estamos aquí
                         para
                         ayudarte.</p>
-                        <img src="" alt="">
+                        </div>
+                        
                     </div>
                    <div class="grid-item formulario">
                      <form action="#" method="post">
-                        <div class="form-group">
+                        <div class="form">
+                            <label for="subject">Asunto:</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecciona un asunto</option>
+                                <option value="pregunta">Pregunta</option>
+                                <option value="propuesta">Propuesta</option>
+                                <option value="trabajo">Trabajo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form">
                             <label for="name">Nombre:</label>
                             <input type="text" id="name" name="name" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form">
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form">
                             <label for="message">Mensaje:</label>
                             <textarea id="message" name="message" rows="4" required></textarea>
                         </div>
-                        <div class="form-group">
+                        <div class="form">
                             <button type="submit" class="btn">Enviar 🠮</button>
                         </div>
                     </form>
@@ -70,6 +77,14 @@
             </div>
         </section>
 
+
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.0027724001316!2d-6.032834923707953!3d36.866352463967054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0d948b51cccbc9%3A0xcf2354b5fc39d6fc!2sVenta%20Manolo!5e0!3m2!1ses!2ses!4v1747684252703!5m2!1ses!2ses"
+                width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
     </main>
 
     <footer>
