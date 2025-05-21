@@ -209,3 +209,31 @@ table {
 }
 
 
+@media (max-width: 900px) {
+   
+    .taller {
+        flex-direction: column;
+    
+    }
+    .taller-imagen {
+        width: 100%;
+        height: auto;
+    }
+    .taller-texto {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #taller2 .taller-imagen {
+        order: 0;
+    }
+
+    table{
+        font-size: 0.9rem;
+    }
+
+    th, .tabla td{
+        padding: 0.5rem;
+    }
+}
+
